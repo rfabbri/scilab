@@ -159,7 +159,7 @@ static int launchMacOSXEnv(thread_parm_t *param)
                             }
                             else
                             {
-                                fprintf(stderr, "Error checking symlink for the target jvm.\n");
+                                fprintf(stderr, "Error checking symlink for the target jvm: %s\n", (char*)pathToTargetJVM);
                             }
                         }
                         else
