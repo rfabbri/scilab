@@ -585,6 +585,7 @@ detect_java_vm() {
 
 # Check if the lib exists or not
     LIBJAVA="$JRE_HOME/lib/$proc/$JAVA_SHLIB"
+    echo =========== $LIBJAVA
     if test ! -f $LIBJAVA; then
         if test $SCIVERBOSE -ne 0; then
             echo "Cannot find $LIBJAVA"
