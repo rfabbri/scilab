@@ -804,7 +804,7 @@ function status = test_single(_module, _testPath, _testName)
     if (error_output == "check") & (_module.error_output == "check") then
         if getos() == "Darwin" then
             tmp_errfile_info = fileinfo(tmp_err);
-            msg = "JavaVM: requested Java version (1.5) not available. Using Java at ""/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"" instead."
+            msg = "JavaVM xx: requested Java version (1.5) not available. Using Java at ""/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"" instead."
 
             if ~isempty(tmp_errfile_info) then
                 txt = mgetl(tmp_err);
